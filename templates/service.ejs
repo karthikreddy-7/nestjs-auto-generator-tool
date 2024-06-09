@@ -1,0 +1,26 @@
+import { Injectable } from '@nestjs/common';
+import { Create<%= name %>Dto } from './dto/<%= name.toLowerCase() %>.create.dto';
+import { Update<%= name %>Dto } from './dto/<%= name.toLowerCase() %>.update.dto';
+
+@Injectable()
+export class <%= name %>Service {
+  create(create<%= name %>Dto: Create<%= name %>Dto) {
+    return 'This action adds a new <%= name.toLowerCase() %>';
+  }
+
+  findAll() {
+    return `This action returns all <%= name.toLowerCase() %>s`;
+  }
+
+  findOne(id: number) {
+    return `This action returns a #${id} <%= name.toLowerCase() %>`;
+  }
+
+  update(id: number, update<%= name %>Dto: Update<%= name %>Dto) {
+    return `This action updates a #${id} <%= name.toLowerCase() %>`;
+  }
+
+  remove(id: number) {
+    return `This action removes a #${id} <%= name.toLowerCase() %>`;
+  }
+}

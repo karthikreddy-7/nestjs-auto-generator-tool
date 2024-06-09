@@ -1,0 +1,25 @@
+{
+  "name": "nestjs-auto-generator-tool",
+  "version": "1.2.0",
+  "description": "an npm package which automatically generates modules, controllers, services, DTOs, and Entities for NestJS projects.",
+  "main": "index.js",
+  "bin": {
+    "nestjs-auto-generator-tool": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "karthik reddy basupallykarthikreddy@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^10.3.9",
+    "@nestjs/swagger": "^7.3.1",
+    "commander": "^12.1.0",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
